@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="/socket.io/socket.io.js">  </script>
+    
+    <script>
+
+       var socket = io();
+  
+        socket.on('message', (data)=> {
+            console.log(data);
+            let el = document.createElement("p")
+            el.innerHTML = data 
+            if(data.toString().includes("true"))
+                el.style.color = "tomato"
+            document.body.append(el)
+              });
+    </script>
+</head>
+<body>
+    <style>
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+    </style>
+</body>
+</html>
