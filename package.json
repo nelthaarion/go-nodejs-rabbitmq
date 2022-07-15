@@ -1,0 +1,25 @@
+{
+  "name": "go-nodejs-rabbitmq",
+  "version": "1.0.0",
+  "description": "A simple project for communicating between go and nodejs using rabbitmq message broker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelthaarion/go-nodejs-rabbitmq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelthaarion/go-nodejs-rabbitmq/issues"
+  },
+  "homepage": "https://github.com/nelthaarion/go-nodejs-rabbitmq#readme",
+  "dependencies": {
+    "amqplib": "^0.10.0",
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}

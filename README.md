@@ -1,14 +1,14 @@
 # go-nodejs-rabbitmq
-A simple project for communicating between go and nodejs using rabbitmq message broker 
+A simple project for communicating between Go and Nodejs using rabbitmq message broker 
 
-# technologies 
-Nodejs - Go - Rabbitmq - Docker - make
 
 # Run and start
-explorer the project folder in the directory 
+for this example, publisher has written with go and consumer with nodejs 
 
-Build : 
-  make build_and_run
- 
-Stop : 
-  make stop
+1 - start rabbitmq service or container 
+
+2 - to start consumer: 
+    node consumer/app.js
+    
+3 - to start publisher: 
+    go run publisher/main.go
